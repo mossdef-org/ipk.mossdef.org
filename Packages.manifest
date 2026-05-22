@@ -16,7 +16,7 @@ Description:  Simple PROCD script to start/stop multiple services affecting DNS 
  Please see https://docs.openwrt.melmac.net/3rd-party-dns/ for more information.
 
 Package: adblock-fast
-Version: 1.2.2-r22
+Version: 1.2.2-r24
 Depends: libc, curl, resolveip, ucode, ucode-mod-fs, ucode-mod-uci, ucode-mod-ubus, ucode-mod-uloop
 Source: feeds/packages/stangri/adblock-fast
 SourceName: adblock-fast
@@ -27,9 +27,9 @@ URL: https://github.com/mossdef-org/adblock-fast/
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Architecture: all
 Installed-Size: 133120
-Filename: adblock-fast_1.2.2-r22_all.ipk
-Size: 27774
-SHA256sum: 063d3536d4dcfa8589a3fc74c760b4a43ae91458783f26ffce1cfd92ad78f876
+Filename: adblock-fast_1.2.2-r24_all.ipk
+Size: 27771
+SHA256sum: 737f0077894de58b6528cc24abca9d8018609fe0f4f589ca5ef82b57eee42ac5
 Description:  Fast AdBlocking script to block ad or abuse/malware domains with Dnsmasq, SmartDNS or Unbound.
  Script supports local/remote list of domains and hosts-files for both block-listing and allow-listing.
  Please see https://docs.openwrt.melmac.ca/adblock-fast/ for more information.
@@ -87,7 +87,7 @@ Description:  This service can be used to fake internet connectivity for local d
  Can be used on routers with no internet access to suppress warnings on local devices of no internet connectivity.
 
 Package: luci-app-adblock-fast
-Version: 1.2.2-r22
+Version: 1.2.2-r24
 Depends: libc, luci-base, adblock-fast, rpcd-mod-ucode
 Source: feeds/base/luci/applications/luci-app-adblock-fast
 SourceName: luci-app-adblock-fast
@@ -98,9 +98,9 @@ URL: https://github.com/mossdef-org/luci-app-adblock-fast/
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 92160
-Filename: luci-app-adblock-fast_1.2.2-r22_all.ipk
+Filename: luci-app-adblock-fast_1.2.2-r24_all.ipk
 Size: 18046
-SHA256sum: b90e1d9c361b6f0389111fe9770539b80983d830ee8ae6fa2e6fad27126d63be
+SHA256sum: cf772be1c6e6af065cdf0d3ad9e84e20598f6f336375210a14eb109a429fa018
 Description:  Provides Web UI for adblock-fast service.
 
 Package: luci-app-advanced-reboot
@@ -153,7 +153,7 @@ SHA256sum: e5fd0bae0131a45d4764fd21e88a71203998587758c9d1ff560a40da2d8fdea0
 Description:  Provides Web UI for Fakeinternet.
 
 Package: luci-app-https-dns-proxy
-Version: 2025.12.29-r5
+Version: 2026.03.18-r4
 Depends: libc, luci-base, https-dns-proxy
 Source: feeds/base/luci/applications/luci-app-https-dns-proxy
 SourceName: luci-app-https-dns-proxy
@@ -164,9 +164,9 @@ URL: https://github.com/mossdef-org/luci-app-https-dns-proxy/
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 71680
-Filename: luci-app-https-dns-proxy_2025.12.29-r5_all.ipk
+Filename: luci-app-https-dns-proxy_2026.03.18-r4_all.ipk
 Size: 12376
-SHA256sum: 247b4618608ba509a504171514eca0d337ece5448389d27cf60e088633ec0736
+SHA256sum: 477de666e157e7bd9d3ae10d7e46e664c1b24a9fbf7384cb346c36f53c2a62e7
 Description:  Provides Web UI for DNS Over HTTPS Proxy
 
 Package: luci-app-pbr
@@ -300,19 +300,19 @@ SHA256sum: 9b224642b8e560fd414b02d70c8c3c283fe6084ad067d8496afab0a8de8d9235
 Description:  Provides Web UI for Nebula protocol/interface.
 
 Package: luci-theme-glass
-Version: 1.1.2-r1
+Version: 1.1.6-r1
 Depends: libc
 Source: feeds/base/luci/applications/luci-theme-glass
 SourceName: luci-theme-glass
 Section: luci
-SourceDateEpoch: 1774203168
+SourceDateEpoch: 1776778321
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 174080
-Filename: luci-theme-glass_1.1.2-r1_all.ipk
-Size: 29272
-SHA256sum: 7b4b64ebfd949df4831f3f3865dc82f2226c7662419e1c27088eeaddfb4790ad
+Filename: luci-theme-glass_1.1.6-r1_all.ipk
+Size: 31386
+SHA256sum: ef9bd901256074844430abffbe900f21934f048fb27c4af45603490ed8c1f973
 Description:  Glass - Apple-inspired glassmorphism theme for LuCI
 
 Package: pbr
@@ -328,8 +328,8 @@ Maintainer: Stan Grishin <stangri@melmac.ca>
 Architecture: all
 Installed-Size: 215040
 Filename: pbr_1.2.3-r63_all.ipk
-Size: 41895
-SHA256sum: a2bf5ea57562abac96f7a9e3835896184afacb679f014b2077755a560e076796
+Size: 41862
+SHA256sum: cb552a75e74c5f204136e12d0e28c585cd82a909bec3a6684f33157025e4f4e2
 Description:  This service enables policy-based routing for WAN interfaces and various VPN tunnels.
  This version supports OpenWrt (23.05 and newer) with firewall4/nft.
 

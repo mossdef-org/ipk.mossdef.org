@@ -170,7 +170,7 @@ SHA256sum: 477de666e157e7bd9d3ae10d7e46e664c1b24a9fbf7384cb346c36f53c2a62e7
 Description:  Provides Web UI for DNS Over HTTPS Proxy
 
 Package: luci-app-pbr
-Version: 1.2.3-r63
+Version: 1.2.3-r65
 Depends: libc, luci-base, jsonfilter, rpcd-mod-ucode, pbr
 Source: feeds/base/luci/applications/luci-app-pbr
 SourceName: luci-app-pbr
@@ -181,9 +181,9 @@ URL: https://github.com/mossdef-org/luci-app-pbr/
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 51200
-Filename: luci-app-pbr_1.2.3-r63_all.ipk
-Size: 10466
-SHA256sum: 16dfab61203c7c26e149b66ed09e84cc2dbf13645d62d1be2fedb2c4c66e1e67
+Filename: luci-app-pbr_1.2.3-r65_all.ipk
+Size: 10468
+SHA256sum: eb437d8091b16f3a8e59e260cca680adffa044377a6418d78baca7d83db45627
 Description:  Provides Web UI for Policy Based Routing Service.
 
 Package: luci-app-simple-adblock
@@ -316,7 +316,7 @@ SHA256sum: ef9bd901256074844430abffbe900f21934f048fb27c4af45603490ed8c1f973
 Description:  Glass - Apple-inspired glassmorphism theme for LuCI
 
 Package: pbr
-Version: 1.2.3-r63
+Version: 1.2.3-r65
 Depends: libc, ip-full, jshn, jsonfilter, resolveip, ucode, ucode-mod-fs, ucode-mod-uci, ucode-mod-ubus, kmod-nft-core, kmod-nft-nat, nftables-json
 Source: feeds/packages/stangri/pbr
 SourceName: pbr
@@ -327,9 +327,9 @@ URL: https://github.com/mossdef-org/pbr/
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Architecture: all
 Installed-Size: 215040
-Filename: pbr_1.2.3-r63_all.ipk
-Size: 41862
-SHA256sum: cb552a75e74c5f204136e12d0e28c585cd82a909bec3a6684f33157025e4f4e2
+Filename: pbr_1.2.3-r65_all.ipk
+Size: 41894
+SHA256sum: 73a59e5d0d57cc7578c1ac378ef45ecb6e50ecbfddbb26b5784fb98b19d57744
 Description:  This service enables policy-based routing for WAN interfaces and various VPN tunnels.
  This version supports OpenWrt (23.05 and newer) with firewall4/nft.
 

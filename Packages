@@ -12,19 +12,19 @@ Description:  Simple PROCD script to start/stop multiple services affecting DNS 
  Please see https://docs.openwrt.melmac.net/3rd-party-dns/ for more information.
 
 Package: adblock-fast
-Version: 1.2.3-r9
+Version: 1.2.3-r11
 Depends: libc, curl, resolveip, ucode, ucode-mod-fs, ucode-mod-uci, ucode-mod-ubus, ucode-mod-uloop
 License: AGPL-3.0-or-later
 Section: net
 URL: https://github.com/mossdef-org/adblock-fast/
 Architecture: all
 Installed-Size: 143360
-Filename: adblock-fast_1.2.3-r9_all.ipk
-Size: 31343
-SHA256sum: 1c08bbb0eb896919a1c10b7943699f498a6fede5de152301b70161b841082855
+Filename: adblock-fast_1.2.3-r11_all.ipk
+Size: 31340
+SHA256sum: 52d4df97d9a4b7bff4fdb18687326ce45b0d442302b33ede5b836946139a8be3
 Description:  Fast AdBlocking script to block ad or abuse/malware domains with Dnsmasq, SmartDNS or Unbound.
  Script supports local/remote list of domains and hosts-files for both block-listing and allow-listing.
- Please see https://docs.openwrt.melmac.ca/adblock-fast/ for more information.
+ Please see https://docs.mossdef.org/adblock-fast/ for more information.
 
 Package: antminer-monitor
 Version: 0.4.0-6
@@ -67,16 +67,16 @@ Description:  This service can be used to fake internet connectivity for local d
  Can be used on routers with no internet access to suppress warnings on local devices of no internet connectivity.
 
 Package: luci-app-adblock-fast
-Version: 1.2.3-r9
+Version: 1.2.3-r11
 Depends: libc, luci-base, adblock-fast, rpcd-mod-ucode
 License: AGPL-3.0-or-later
 Section: luci
 URL: https://github.com/mossdef-org/luci-app-adblock-fast/
 Architecture: all
 Installed-Size: 92160
-Filename: luci-app-adblock-fast_1.2.3-r9_all.ipk
+Filename: luci-app-adblock-fast_1.2.3-r11_all.ipk
 Size: 20390
-SHA256sum: 64e9f1b911c2736e5d9152d040d92ee177c05839ca5ab83f3d4ec0178596b868
+SHA256sum: e6098e01e8692c2940fb24cba3bb742e116339551415f1fb1a001995c9ff9708
 Description:  Provides Web UI for adblock-fast service.
 
 Package: luci-app-advanced-reboot
@@ -88,9 +88,9 @@ URL: https://github.com/mossdef-org/luci-app-advanced-reboot/
 Architecture: all
 Installed-Size: 71680
 Filename: luci-app-advanced-reboot_1.1.2-r4_all.ipk
-Size: 12740
-SHA256sum: f0f87dcfdeeb105f5d0c3c485a75bf4c1456e0869f0322e60fa8c8d1c68e1b5d
-Description:  Provides Web UI (found under System/Advanced Reboot) to reboot supported Linksys and ZyXEL routers to an alternative partition. Also provides Web UI to shut down (power off) your device. Supported dual-partition routers are listed at https://docs.openwrt.melmac.ca/luci-app-advanced-reboot/
+Size: 12734
+SHA256sum: d6f4a75dd489279299cfcfe3530a2bec4fe1ecf668deeb1035e99d66b8f20e85
+Description:  Provides Web UI (found under System/Advanced Reboot) to reboot supported Linksys and ZyXEL routers to an alternative partition. Also provides Web UI to shut down (power off) your device. Supported dual-partition routers are listed at https://docs.mossdef.org/luci-app-advanced-reboot/
 
 Package: luci-app-easyflash
 Version: 1.0.0-1
@@ -125,8 +125,8 @@ URL: https://github.com/mossdef-org/luci-app-https-dns-proxy/
 Architecture: all
 Installed-Size: 71680
 Filename: luci-app-https-dns-proxy_2026.03.18-r4_all.ipk
-Size: 12376
-SHA256sum: 477de666e157e7bd9d3ae10d7e46e664c1b24a9fbf7384cb346c36f53c2a62e7
+Size: 12389
+SHA256sum: dd6e476827ac145627ad1a3163a3d6d1215fdbb68c6d05653a94a5ba6d20d079
 Description:  Provides Web UI for DNS Over HTTPS Proxy
 
 Package: luci-app-pbr
@@ -138,8 +138,8 @@ URL: https://github.com/mossdef-org/luci-app-pbr/
 Architecture: all
 Installed-Size: 51200
 Filename: luci-app-pbr_1.2.3-r67_all.ipk
-Size: 10468
-SHA256sum: 29ee139df87d0a5d582f52d8f223e3c93470ca10dd520ca4fab215ed79e3b102
+Size: 10471
+SHA256sum: e1495cd6e2e62f5a32c588d387e60a5cbc3b977bca295a8a4c86dda16191d349
 Description:  Provides Web UI for Policy Based Routing Service.
 
 Package: luci-app-simple-adblock
@@ -239,6 +239,20 @@ Size: 31386
 SHA256sum: ef9bd901256074844430abffbe900f21934f048fb27c4af45603490ed8c1f973
 Description:  Glass - Apple-inspired glassmorphism theme for LuCI
 
+Package: moci
+Version: 0.1.1-r1
+Depends: libc, rpcd, jsonfilter
+License: MIT
+Section: admin
+Architecture: all
+Installed-Size: 235520
+Filename: moci_0.1.1-r1_all.ipk
+Size: 62847
+SHA256sum: d541f295b5aba077ff0c85f27017997c8f63b2a7ad9d3ce73d8d2fb9f0523b2d
+Description:  Modern web interface for OpenWrt routers.
+ Pure vanilla JavaScript SPA using OpenWrt's native ubus API.
+ Works with uhttpd (standard OpenWrt) or lighttpd (TurrisOS).
+
 Package: pbr
 Version: 1.2.3-r67
 Depends: libc, ip-full, jshn, jsonfilter, resolveip, ucode, ucode-mod-fs, ucode-mod-uci, ucode-mod-ubus, kmod-nft-core, kmod-nft-nat, nftables-json
@@ -248,8 +262,8 @@ URL: https://github.com/mossdef-org/pbr/
 Architecture: all
 Installed-Size: 215040
 Filename: pbr_1.2.3-r67_all.ipk
-Size: 42947
-SHA256sum: 5685f2cf22db66d383a16a8e20eba4ec54d29feda165e4a00d90874dd9fe930e
+Size: 42953
+SHA256sum: db1b8e1b8af99f727889b1587f0faf8cd8337564601281abb9d8d4189f23918f
 Description:  This service enables policy-based routing for WAN interfaces and various VPN tunnels.
  This version supports OpenWrt (23.05 and newer) with firewall4/nft.
 

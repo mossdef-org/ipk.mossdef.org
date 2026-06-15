@@ -16,7 +16,7 @@ Description:  Simple PROCD script to start/stop multiple services affecting DNS 
  Please see https://docs.openwrt.melmac.net/3rd-party-dns/ for more information.
 
 Package: adblock-fast
-Version: 1.2.3-r11
+Version: 1.2.4-r2
 Depends: libc, curl, resolveip, ucode, ucode-mod-fs, ucode-mod-uci, ucode-mod-ubus, ucode-mod-uloop
 Source: feeds/packages/stangri/adblock-fast
 SourceName: adblock-fast
@@ -27,9 +27,9 @@ URL: https://github.com/mossdef-org/adblock-fast/
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Architecture: all
 Installed-Size: 143360
-Filename: adblock-fast_1.2.3-r11_all.ipk
-Size: 31340
-SHA256sum: 52d4df97d9a4b7bff4fdb18687326ce45b0d442302b33ede5b836946139a8be3
+Filename: adblock-fast_1.2.4-r2_all.ipk
+Size: 31367
+SHA256sum: 8fc56f6142459d63af97a6a00f42fedbfe6d96e4d4c45cb62061d1c52ef1cc5a
 Description:  Fast AdBlocking script to block ad or abuse/malware domains with Dnsmasq, SmartDNS or Unbound.
  Script supports local/remote list of domains and hosts-files for both block-listing and allow-listing.
  Please see https://docs.mossdef.org/adblock-fast/ for more information.
@@ -87,7 +87,7 @@ Description:  This service can be used to fake internet connectivity for local d
  Can be used on routers with no internet access to suppress warnings on local devices of no internet connectivity.
 
 Package: luci-app-adblock-fast
-Version: 1.2.3-r11
+Version: 1.2.4-r2
 Depends: libc, luci-base, adblock-fast, rpcd-mod-ucode
 Source: feeds/base/luci/applications/luci-app-adblock-fast
 SourceName: luci-app-adblock-fast
@@ -98,9 +98,9 @@ URL: https://github.com/mossdef-org/luci-app-adblock-fast/
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 92160
-Filename: luci-app-adblock-fast_1.2.3-r11_all.ipk
-Size: 20390
-SHA256sum: e6098e01e8692c2940fb24cba3bb742e116339551415f1fb1a001995c9ff9708
+Filename: luci-app-adblock-fast_1.2.4-r2_all.ipk
+Size: 20389
+SHA256sum: f128a9bd5445172222f63eae8492996c9d43c752df5a3294d8703b448b1168c1
 Description:  Provides Web UI for adblock-fast service.
 
 Package: luci-app-advanced-reboot
@@ -314,6 +314,27 @@ Filename: luci-theme-glass_1.1.6-r1_all.ipk
 Size: 31386
 SHA256sum: ef9bd901256074844430abffbe900f21934f048fb27c4af45603490ed8c1f973
 Description:  Glass - Apple-inspired glassmorphism theme for LuCI
+
+Package: moci-addon-adblock-fast
+Version: 1.2.4-r2
+Depends: libc, moci, adblock-fast, rpcd-mod-ucode
+Source: feeds/packages/stangri/moci-addon-adblock-fast
+SourceName: moci-addon-adblock-fast
+License: AGPL-3.0-or-later
+LicenseFiles: LICENSE
+Section: admin
+SourceDateEpoch: 1773709139
+URL: https://github.com/mossdef-org/luci-app-adblock-fast/
+Maintainer: Stan Grishin <stangri@melmac.ca>
+Architecture: all
+Installed-Size: 92160
+Filename: moci-addon-adblock-fast_1.2.4-r2_all.ipk
+Size: 22555
+SHA256sum: 2cc1646e242702698b0f00105ff6e4c0b1b0b54e1e876c4cf0fb9cc9ed69fed9
+Description:  MoCI add-on providing a web UI for the adblock-fast service.
+ Ships its own rpcd ucode backend (ubus object moci.adblock-fast) and an
+ rpcd ACL, so it drives adblock-fast without LuCI installed. The MoCI
+ equivalent of luci-app-adblock-fast.
 
 Package: moci
 Version: 0.1.1-r1

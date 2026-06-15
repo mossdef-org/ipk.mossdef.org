@@ -373,6 +373,26 @@ SHA256sum: db1b8e1b8af99f727889b1587f0faf8cd8337564601281abb9d8d4189f23918f
 Description:  This service enables policy-based routing for WAN interfaces and various VPN tunnels.
  This version supports OpenWrt (23.05 and newer) with firewall4/nft.
 
+Package: pia-wg-monitor
+Version: 1.0.0-r1
+Depends: libc, wireguard-tools, curl, jq, resolveip
+Source: feeds/packages/stangri/pia-wg-monitor
+SourceName: pia-wg-monitor
+License: Proprietary
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1773709139
+Maintainer: Stan Grishin <stangri@melmac.ca>
+Architecture: all
+Installed-Size: 40960
+Filename: pia-wg-monitor_1.0.0-r1_all.ipk
+Size: 10192
+SHA256sum: 108a3832a75058c996fa6dc3ad8fea4c2bf43adf3b1106027c686e1c18c40835
+Description:  Monitors Private Internet Access WireGuard interfaces and, when an endpoint
+ stops returning traffic (TX climbing while RX stays flat) with WAN up,
+ automatically re-registers a fresh key with PIA and updates the interface.
+ Endpoints are declared per interface->region in /etc/config/pia-wg-monitor.
+
 Package: policy-routing
 Version: 0.9.1-1
 Depends: libc, jshn, ipset, iptables, resolveip, kmod-ipt-ipset, iptables-mod-ipopt, ip-full

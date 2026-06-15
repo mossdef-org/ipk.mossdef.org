@@ -28,8 +28,8 @@ Maintainer: Stan Grishin <stangri@melmac.ca>
 Architecture: all
 Installed-Size: 143360
 Filename: adblock-fast_1.2.4-r2_all.ipk
-Size: 31367
-SHA256sum: 8fc56f6142459d63af97a6a00f42fedbfe6d96e4d4c45cb62061d1c52ef1cc5a
+Size: 31378
+SHA256sum: 94468b54016563b9ffbb7697157582d5425db96e6c8012dd25d29ab42736638a
 Description:  Fast AdBlocking script to block ad or abuse/malware domains with Dnsmasq, SmartDNS or Unbound.
  Script supports local/remote list of domains and hosts-files for both block-listing and allow-listing.
  Please see https://docs.mossdef.org/adblock-fast/ for more information.
@@ -104,7 +104,7 @@ SHA256sum: f128a9bd5445172222f63eae8492996c9d43c752df5a3294d8703b448b1168c1
 Description:  Provides Web UI for adblock-fast service.
 
 Package: luci-app-advanced-reboot
-Version: 1.1.2-r4
+Version: 1.1.2-r5
 Depends: libc, luci-base, jshn
 Source: feeds/base/luci/applications/luci-app-advanced-reboot
 SourceName: luci-app-advanced-reboot
@@ -114,10 +114,10 @@ SourceDateEpoch: 1773709139
 URL: https://github.com/mossdef-org/luci-app-advanced-reboot/
 Maintainer: OpenWrt LuCI community
 Architecture: all
-Installed-Size: 71680
-Filename: luci-app-advanced-reboot_1.1.2-r4_all.ipk
-Size: 12734
-SHA256sum: d6f4a75dd489279299cfcfe3530a2bec4fe1ecf668deeb1035e99d66b8f20e85
+Installed-Size: 81920
+Filename: luci-app-advanced-reboot_1.1.2-r5_all.ipk
+Size: 13269
+SHA256sum: 769632882f740d72686d66dcd218932632f371ad0d3316a9eef9b233288ebac9
 Description:  Provides Web UI (found under System/Advanced Reboot) to reboot supported Linksys and ZyXEL routers to an alternative partition. Also provides Web UI to shut down (power off) your device. Supported dual-partition routers are listed at https://docs.mossdef.org/luci-app-advanced-reboot/
 
 Package: luci-app-easyflash
@@ -165,8 +165,8 @@ Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 71680
 Filename: luci-app-https-dns-proxy_2026.03.18-r4_all.ipk
-Size: 12389
-SHA256sum: dd6e476827ac145627ad1a3163a3d6d1215fdbb68c6d05653a94a5ba6d20d079
+Size: 12382
+SHA256sum: 083919b584b963a48905e29648ccfeee65b8a89d82f7fe76309c61d369879bc7
 Description:  Provides Web UI for DNS Over HTTPS Proxy
 
 Package: luci-app-pbr

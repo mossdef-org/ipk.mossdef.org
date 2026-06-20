@@ -154,6 +154,19 @@ Size: 8426
 SHA256sum: 4c459fc82b8691046d282d61bfdcbf2749ef334528d728ccc9eedf1b5a5cf208
 Description:  Provides Web UI for simple-adblock service.
 
+Package: luci-app-trafficctl
+Version: 1.7.0-r1
+Depends: libc, conntrack, luci-base, rpcd, curl
+License: Apache-2.0
+Section: luci
+URL: https://github.com/openwrt/luci
+Architecture: all
+Installed-Size: 266240
+Filename: luci-app-trafficctl_1.7.0-r1_all.ipk
+Size: 58789
+SHA256sum: c8fc43cb850539abb4bedb8dc2a57d8832892f9c4e1d73733fde4179bfdc34f2
+Description:  Per-device traffic monitoring, rate limiting (nft/iptables), traffic shaping (tc/HTB), internet blocking, and WiFi MAC filtering.
+
 Package: luci-app-vpn-policy-routing
 Version: 0.3.4-8
 Depends: libc, luci-compat, luci-mod-admin-full, vpn-policy-routing

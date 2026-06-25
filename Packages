@@ -304,8 +304,8 @@ Section: net
 Architecture: all
 Installed-Size: 40960
 Filename: pia-wg-monitor_1.0.0-r4_all.ipk
-Size: 10776
-SHA256sum: 0537ceb1c36b40e1c08714a5a283ad00f17968bedffe27e18db6d9812ba8a852
+Size: 11693
+SHA256sum: b97e4c9446f478da5da98538ed564c766bf945b8628b0eb8445f96450bc926c5
 Description:  Monitors Private Internet Access WireGuard interfaces and, when an endpoint
  stops returning traffic (TX climbing while RX stays flat) with WAN up,
  automatically re-registers a fresh key with PIA and updates the interface.
